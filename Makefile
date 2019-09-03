@@ -18,7 +18,7 @@ LIBDIR=  $(PREFIX)/lib/bcc
 INCLDIR= $(PREFIX)/lib/bcc
 ASLDDIR= $(BINDIR)
 MANDIR=	 $(PREFIX)/man
-CFLAGS=  -O
+CFLAGS=  -march=i386 -mtune=i386 -m32 -Os -s
 
 # Some makes take the last of a list as the default ...
 all: make.fil
